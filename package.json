@@ -4,7 +4,7 @@
   "description": "next-js spa for twxit real-time application",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 3001",
     "build": "next build",
     "start": "next start"
   },
@@ -19,7 +19,12 @@
   },
   "homepage": "https://github.com/PatrickDesign/next-twixt#readme",
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@apollo/react-ssr": "^3.1.3",
+    "apollo-boost": "^0.4.7",
+    "graphql": "^14.6.0",
     "next": "^9.1.7",
+    "next-apollo": "^3.1.10",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

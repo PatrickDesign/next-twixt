@@ -13,18 +13,15 @@
 //   return { userAgent };
 // };
 
+import '../components/sayHelloForm'
+import SayHelloForm from '../components/sayHelloForm';
 
 function HomePage() {
 
-  async function getName(){
-    
-    const data = await fetch("/api/sayHello?name=Patrick");
-    data.text().then(text => console.log(text));
-  }
-
-  getName();
-
-  return <div>Welcome to Next.js!</div>;
+  return (
+    <SayHelloForm />
+  )
+ 
 }
 
 export default HomePage;
